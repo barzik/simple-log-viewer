@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Log Messages</title>
+</head>
+<body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io('http://localhost');
+    socket.on('log-event', function (data) {
+        var current_text = document.getElementById('log_messages').innerHTML;
+        document.getElementById('log_messages').innerHTML += "<p>"+data+"</p>";
+    });
+    socket.on('initial-log', function (data) {
+        for (i = 0; i < data.length; i++) {
+            document.getElementById('log_messages').innerHTML += "<p>"+data[i]+"</p>";
+        }
+
+    });
+</script>
+<div id="log_messages"></div>
+</body>
+</html>

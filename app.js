@@ -5,9 +5,9 @@
 
 var myLog = require('./lib/logOpener.js')
 
-myLog.init('/home/ran/www/simple-log-viewer/logfile.log');
+myLog.init('logfile.log'); //init module
 
-myLog.createServer();
+myLog.createServer(); //You can specify port number here
 
-myLog.addToLog('hahahahssssa1');
+//myLog.addToLog('Some Log Item');
 

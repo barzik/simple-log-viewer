@@ -1,0 +1,30 @@
+{
+  "name": "simple-log-viewer",
+  "version": "1.0.0",
+  "description": "Node.js module for viewing log items in the browser",
+  "main": "app.js",
+  "dependencies": {
+    "socket.io": "~1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barzik/simple-log-viewer.git"
+  },
+  "keywords": [
+    "node.js",
+    "viewer",
+    "log",
+    "browser",
+    "socket",
+    "simple"
+  ],
+  "author": "Ran Bar-Zik <ran@bar-zik.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/barzik/simple-log-viewer/issues"
+  }
+}

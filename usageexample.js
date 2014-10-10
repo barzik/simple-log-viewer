@@ -9,8 +9,8 @@ myLog.init('logfile.log'); //init module
 
 myLog.createServer(); //You can specify port number here
 
-//myLog.addToLog('Some Log Item');
-//
-//myLog.addToLog('Some Log Item2');
-//
-//myLog.addToLog('Some Log Item3');
+myLog.addToLog('Some Log Item');
+
+myLog.addToLog('Some Log Item2');
+
+myLog.addToLog('Some Log Item3');

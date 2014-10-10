@@ -5,15 +5,18 @@ Without any configurations, settings and install. just name the log file place a
 
 ## How to use
 
-You can view usageexample.js for example and for live example just "nodejs usageexample.js".
+    var myLog = require('simple-log-viewer');
+    
+    myLog.init('logfile.log'); //init module with log file name
+    
+    myLog.createServer(); //You can specify port number here
+    
+    myLog.addToLog('Some Log Item');
+    
+    myLog.addToLog('Some Log Item2');
+    
+    myLog.addToLog('Some Log Item3');
 
-	var myLog = require('./lib/logOpener.js'); //require (to be replaced with npm)
-
-	myLog.init('logfile.log');  //initiate the logfile
-
-	myLog.createServer(); //create the server - from this point you can go to localhost:3000 or IP:3000 and You will see the log file.
-
-	myLog.addToLog('Some log entry'); //You can add items to log using this method.
 	
 ## How to test
 

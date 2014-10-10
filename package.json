@@ -1,36 +1,43 @@
 {
-  "name": "simple-log-viewer",
-  "version": "1.0.1",
-  "description": "Node.js module for viewing log items in the browser",
-  "main": "/lib/logOpener.js",
-  "dependencies": {
-    "socket.io": "~1.1.0"
-  },
-  "devDependencies": {
-    "mocha": "*",
-    "socket.io-client": "~1.1.0"
-  },
-  "scripts": {
-    "test": "make test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/barzik/simple-log-viewer.git"
-  },
-  "keywords": [
-    "node.js",
-    "viewer",
-    "log",
-    "browser",
-    "socket",
-    "simple"
-  ],
-  "author": "Ran Bar-Zik <ran@bar-zik.com>",
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/barzik/simple-log-viewer/issues"
-  },
-  "directories": {
-    "test": "test"
-  }
+    "name": "simple-log-viewer",
+    "version": "1.0.2",
+    "description": "Node.js module for viewing log items in the browser",
+    "main": "index.js",
+    "dependencies": {
+        "socket.io": "~1.1.0"
+    },
+    "devDependencies": {
+        "mocha": "~1.21.4",
+        "socket.io-client": "~1.1.0"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/barzik/simple-log-viewer.git"
+    },
+    "keywords": [
+        "node.js",
+        "viewer",
+        "log",
+        "browser",
+        "socket",
+        "simple"
+    ],
+    "author": {
+        "name": "Ran Bar-Zik",
+        "email": "ran@bar-zik.com"
+    },
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/barzik/simple-log-viewer/issues"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "readme": "# Simple Log Viewer\n\nNode.js module intended for watching simple log file and view this file on user's browser.\nWithout any configurations, settings and install. just name the log file place and that's it! the user is being able to view the log file by going to the IP:3000 (You can change the port). the user will view the last 10 entries and every new entry will appear immediatly in the browser.\n\n## How to use\n\nYou can view usageexample.js for example and for live example just \"nodejs usageexample.js\".\n\n\tvar myLog = require('./lib/logOpener.js'); //require (to be replaced with npm)\n\n\tmyLog.init('logfile.log');  //initiate the logfile\n\n\tmyLog.createServer(); //create the server - from this point you can go to localhost:3000 or IP:3000 and You will see the log file.\n\n\tmyLog.addToLog('Some log entry'); //You can add items to log using this method.\n\t\n## How to test\n\nTesting as being made with Mocha. just \"make test\" from root directory and that's it!",
+    "readmeFilename": "README.md",
+    "_id": "simple-log-viewer@1.0.1",
+    "_from": "simple-log-viewer@"
 }
